@@ -96,7 +96,12 @@ nav a{
     float: right;
     background: lightgrey;
 }
-
+#side_section h2{
+    border-bottom: #333 1px solid;
+}
+#side_section .info{
+    margin-bottom: 0%;
+}
  /* Professional Block */
 #info{
     padding-top: 1px;
