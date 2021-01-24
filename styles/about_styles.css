@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+:root {
+    --primary-color: rgba(13, 110, 139, 0.55);
+    --overlay-color: rgba(24, 39, 51 , 0.85);
+    --trans-speed: 0.5s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: 0%;
+    font-size: large;
+    background: white;
+    color: black;
+
+}
+body:before{
+    content: "";
+    /* background: url('../images/m.jpeg') no-repeat center center/cover; */
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.nav{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+#content{
+	background-color: #333;
+	color: white;
+	padding:18px;
+}
+#content ul{
+	padding-top: 0px;
+	padding-left: 5px;
+	list-style: none;
+}
+#content li{
+	display: inline;
+}
+nav a{
+	color:white;
+	text-decoration:none;
+    font-size:larger;
+	padding-right: 60px
+}
+.nav a:hover{
+    color: red;
+    transition: 0.4s;
+} 
+
+#myBtn{
+    border: solid;
+    padding:  15px;
+    color: black;
+}
+#myBtn:active{
+    color: greenyellow;
+}
+#myBtn:hover{
+    padding: 15px;
+    color: red;
+}
+#myBtn{
+    background-image: url(../images/up.jpeg);
+    background-size: 100%;
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 1860px;
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+#main-header{
+    text-align: center;
+    padding: 25px;
+    border-style: none;
+    font-size: larger;
+    
+}
+#info{
+    padding-top: 1px;
+    background-position: center;
+    height: 150px;
+    padding-left: 50px;
+}
+#info p{
+    font-size: 18px;
+    margin-left: 30px;
+}
+.date{
+    float: left;
+    width: 12%;
+   box-sizing:border-box;
+}
+.position{
+   float:left;
+   width: 15%;
+   box-sizing: border-box;
+   font-style:italic;
+}
+#exp{
+    padding-left: 50px;
+}
+#exp-main h2{
+    height: 5px;
+}
+#exp-main p{
+    margin-left: 30px;
+}
+
+.def{
+    padding-bottom: 5px;
+}
+#edu-block {
+    padding-left: 50px;
+}
+#edu-block p{
+    margin-left: 30px;
+   height: 10px;
+
+}
+#edu-block .itl{
+    font-style: italic;
+
+}
+#edu-block .last{
+    padding-bottom: 25px;
+}
+#acc-block {
+    padding-top: 1px;
+    padding-left: 50px;
+}
+#key-block{
+    padding-left: 50px;
+}
+#key-block #left{
+    float :left;
+    width:20%;
+    padding:15px;
+    box-sizing: border-box;
+}
+#key-block #right{
+    float :left;
+    width:20%;
+    padding:15px;
+    box-sizing: border-box;
+}
+#key-block li{
+    margin-left: 30px;
+}
+
+#acc-block .indent{
+    margin-left: 30px;
+}
+#acc-block{
+    padding-left: 50px;
+}
+#app-block{
+    padding-left: 50px;
+}
