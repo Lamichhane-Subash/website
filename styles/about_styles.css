@@ -33,7 +33,7 @@ a{
     text-decoration: none;
 }
 a:hover {
-    color:red;
+    color:darkgreen;
     transition: 0.75s ease-in-out;
 }
 /*Navigation Block */
@@ -41,6 +41,10 @@ a:hover {
 	width: 80%;
 	margin:auto;
     overflow: hidden;   
+}
+#menu a:hover{
+    background: lightgray;
+    transition: 0.75s ease-in-out;
 }
 #content{
 	background-color: #333;
@@ -57,9 +61,13 @@ a:hover {
 }
 nav a{
 	color:white;
-	text-decoration:none;
+    text-decoration:none;
     font-size:larger;
-	padding-right: 60px
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px 50px;
 }
 /* Button Block */
 #myBtn{
