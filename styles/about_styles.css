@@ -11,7 +11,7 @@ html{
 body {
     font-family: 'Alegreya Sans', sans-serif;
     margin:0%;
-    font-size: large;
+    font-size:20px;
     background: white;
     color: black;
 }
@@ -33,10 +33,11 @@ a{
     text-decoration: none;
 }
 a:hover {
-    color:darkgreen;
-    transition: 0.75s ease-in-out;
+    color:black;
+    transition: 0.75s ease-in;
+    transition: 0.75s ease-out;
 }
-/*Navigation Block */
+/*------------------------------Navigation Block -------------------------------------------------------*/
 .nav{
 	width: 80%;
 	margin:auto;
@@ -44,7 +45,8 @@ a:hover {
 }
 #menu a:hover{
     background: lightgray;
-    transition: 0.75s ease-in-out;
+    transition: 0.75s ease-in;
+    transition: 0.75s ease-out;
 }
 #content{
 	background-color: #333;
@@ -69,7 +71,7 @@ nav a{
     padding-bottom: 15px;
     border-radius: 15px 50px;
 }
-/* Button Block */
+/*----------------------- Button Block ----------------------------------------------------*/
 #myBtn{
     border: solid;
     padding:  15px;
@@ -90,7 +92,7 @@ nav a{
     margin-left: 10px;
     text-decoration: none;
 }
-/*Header Block*/
+/*------------------------Header Block ------------------------------------------------------*/
 #main-header{
     text-align: center;
     padding: 25px;
@@ -98,19 +100,22 @@ nav a{
     font-size: larger;
 
 }
-/*  Side Block */
+/* ------------------------ Side Block -------------------------------------------------------*/
 #side_section{
-    width: 29%;
+    width: 29.5%;
     float: right;
     background: lightgrey;
 }
-#side_section h2{
-    border-bottom: #333 1px solid;
-}
 #side_section .info{
-    margin-bottom: 0%;
+   margin-bottom: 2%;
+
+    padding-left:5px;
 }
- /* Professional Block */
+#side_section h4{
+    padding-left:8px;
+    display: inline;
+}
+ /*--------------------- Professional Block -------------------------------------------------*/
 #info{
     padding-top: 1px;
     background-position: center;
@@ -133,7 +138,7 @@ nav a{
    box-sizing: border-box;
    font-style:italic;
 }
- /* Experience Block */
+ /*---------------------- Experience Block ----------------------------------------------------*/
 #exp{
     padding-left: 50px;
 }
@@ -175,7 +180,7 @@ nav a{
     padding-top: 1px;
     padding-left: 50px;
 }
- /* Key Block */
+ /* --------------------------Key Block ------------------------------------------------------------*/
 #key-block{
     padding-left: 50px;
 }
@@ -199,7 +204,7 @@ nav a{
 #key-block li{
     margin-left: 30px;
 }
- /* Accomplishment Block */
+ /* ------------------------Accomplishment Block --------------------------------------------------*/
 #acc-block .indent{
     margin-left: 30px;
 }
