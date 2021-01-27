@@ -1,2 +1,2 @@
-# Created an Website, to showcase my driver set of skills.
+# Created an Website, to showcase my diverse set of skills.
  
