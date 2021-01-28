@@ -128,7 +128,7 @@ image{
     font-weight: var(--font-semi);
   }
   @media screen and (max-width: 768px){
-    .nav__menu{
+    .nav_menu{
       position: fixed;
       top: var(--header-height);
       right: -100%;
@@ -139,17 +139,17 @@ image{
       transition: .5s;
     }
   }
-  .nav__item{
+  .nav_item{
     margin-bottom: var(--marginb-4);
   }
-  .nav__link{
+  .nav_link{
     position: relative;
     color: #fff;
   }
-  .nav__link:hover{
+  .nav_link:hover{
     position: relative;
   }
-  .nav__link:hover::after{
+  .nav_link:hover::after{
     position: absolute;
     content: "";
     width: 100%;
@@ -158,10 +158,10 @@ image{
     top: 2rem;
     background-color: var(--primary-color);
   }
-  .nav__logo{
+  .nav_logo{
     color: var(--secondary-color);
   }
-  .nav__toggle{
+  .nav_toggle{
     color: var(--secondary-color);
     font-size: 1.5rem;
     cursor: pointer;
@@ -170,45 +170,59 @@ image{
   .show{
     right: 0;
    }
-  .home__data{
+  .home_data{
     align-self: center;
   }
-  .home__title{
+  .home_title{
     font-size: var(--big-font);
     margin-bottom: var(--marginb-5);
   }
-  .home__title-color{
+  .home_title-color{
     color: var(--primary-color);
   } */
 
 /*----------------------------Summary--------------------------*/
-  .summary__container{
+  .summary_container{
     row-gap: 2rem;
     text-align: center;
   }
-  .summary__subtitle{
+  .summary_subtitle{
     margin-bottom: var(--marginb-2);
   }
-  .summary__img{
+  .summary_img{
     justify-self: center;
   }
-  .summary__img img{
+  .summary_img img{
     width: 200px;
     border-radius: .5rem;
   }
-  
-/* --------------------------Skills---------------------------*/
-  .skills__container{
+/*-------------------------Education--------------------------*/
+.education_container{
     row-gap: 2rem;
     text-align: center;
   }
-  .skills__subtitle{
+  .education_subtitle{
     margin-bottom: var(--marginb-2);
   }
-  .skills__text{
+  .education_img{
+    justify-self: center;
+  }
+  .education_img img{
+    width: 200px;
+    border-radius: .5rem;
+  }
+/* --------------------------Skills---------------------------*/
+  .skills_container{
+    row-gap: 2rem;
+    text-align: center;
+  }
+  .skills_subtitle{
+    margin-bottom: var(--marginb-2);
+  }
+  .skills_text{
     margin-bottom: var(--marginb-4);
   }
-  .skills__data{
+  .skills_data{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -219,16 +233,16 @@ image{
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
   }
-  .skills__icon{
+  .skills_icon{
     font-size: 2rem;
     margin-right: var(--marginb-2);
     color: var(--primary-color);
   }
-  .skills__names{
+  .skills_names{
     display: flex;
     align-items: center;
   }
-  .skills__bar{
+  .skills_bar{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -237,40 +251,40 @@ image{
     border-radius: .5rem;
     z-index: var(--z-back);
   }
-  .skills__html{
+  .skills_html{
     width: 80%;
   }
-  .skills__css{
+  .skills_css{
     width: 75%;
   }
-  .skills__js{
+  .skills_js{
     width: 65%;
   }
-  .skills__ux{
+  .skills_ux{
     width: 60%;
   }
-  .skills__img{
+  .skills_img{
     border-radius: .5rem;
   }
   
-  /* ===== project =====*/
-  .project__container{
+/*----------------------------------Project-----------------------------------------*/
+  .project_container{
     row-gap: 2rem;
   }
-  .project__img{
+  .project_img{
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
     border-radius: .5rem;
     overflow: hidden;
   }
-  .project__img img{
+  .project_img img{
     transition: 1s;
     cursor: pointer;
   }
-  .project__img img:hover{
+  .project_img img:hover{
     transform: scale(1.1);
   }
 
-  /* ===== FOOTER =====*/
+ /*-------------------------Footer-----------------------------*/
   .footer{
     background-color: var(--secondary-color);
     color: #fff;
@@ -278,14 +292,14 @@ image{
     font-weight: var(--font-semi);
     padding: 2rem 0;
   }
-  .footer__title{
+  .footer_title{
     font-size: 2rem;
     margin-bottom: var(--marginb-4);
   }
-  .footer__social{
+  .footer_social{
     margin-bottom: var(--marginb-4);
   }
-  .footer__icon{
+  .footer_icon{
     font-size: 1.5rem;
     color: #fff;
     margin: 0 var(--marginb-2)
@@ -321,59 +335,64 @@ image{
     .nav{
       height: calc(var(--header-height) + 1rem);
     }
-    .nav__list{
+    .nav_list{
       display: flex;
       padding-top: 0;
     }
-    .nav__item{
+    .nav_item{
       margin-left: var(--marginb-6);
       margin-bottom: 0;
     }
-    .nav__toggle{
+    .nav_toggle{
       display: none;
     }
-    .nav__link{
+    .nav_link{
       color: var(--secondary-color);
     }
-  
-    .home{
-      height: 100vh;
+    .last {
+        margin-bottom: 10px;
     }
-    .home__data{
+    .home{
+      height: 30vh;
+    }
+    .home_data{
       align-self: flex-end;
     }
-    .home__social{
+    .home_social{
       padding-top: 0;
       padding-bottom: 2.5rem;
       flex-direction: row;
       align-self: flex-end;
     }
-    .home__social-icon{
+    .home_social-icon{
       margin-bottom: 0;
       margin-right: var(--marginb-4);
     }
-    .home__img{
+    .home_img{
       width: 457px;
       bottom: 15%;
     }
   
-    .summary__container, .skills__container{
+    .summary_container, .skills_container, .education_container{
       grid-template-columns: repeat(2,1fr);
       align-items: center;
       text-align: initial;
     }
-    .summary__img img{
+    .summary_img img{
       width: 300px;
     }
-    .project__container{
+    .education_img ing {
+        width:300px;
+    }
+    .project_container{
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2,1fr);
       column-gap: 2rem;
     }
-    .contact__form{
+    .contact_form{
       width: 360px;
     }
-    .contact__container{
+    .contact_container{
       justify-items: center;
     }
   }
@@ -383,7 +402,7 @@ image{
       margin-left: auto;
       margin-right: auto;
     }
-    .home__img{
+    .home_img{
       right: 10%;
     }
   }
