@@ -5,7 +5,7 @@
     box-sizing: border-box;
   }
   body{
-    background: #f1f1f1;
+    background:#fff;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
   
   
   .card{
-    background: #2f3542;
+    background:rgba(13, 110, 139, 0.55);
     padding: 0 20px;
     margin: 0 10px;
     width: calc(33% - 20px);
@@ -37,7 +37,7 @@
   
   .card-icon{
     font-size: 28px;
-    background: #ff6348;
+    background:rgba(24, 39, 51 , 0.85);
     width: 60px;
     height: 60px;
     text-align: center;

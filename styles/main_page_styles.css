@@ -6,7 +6,7 @@
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --trans-speed: 0.5s;
   }
-  
+  /* Body */
   * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@
     font-size: larger;
     line-height: 1.4;
   }
-  
+  /* Background*/
   .container {
     max-width: 960px;
     margin: auto;
