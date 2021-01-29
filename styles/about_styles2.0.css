@@ -69,14 +69,6 @@ image{
     height: auto;
     display: block;
 }
-.section-title{
-    position: relative;
-    font-size: var(--h2-font-size);
-    color: var(--primary-color);
-    margin-top: var(--marginb-2);
-    margin-bottom: var(--marginb-4);
-    text-align: center;
-}
 .title{
     position: relative;
     font-size: var(--h3-font-size);
@@ -84,6 +76,14 @@ image{
     margin-top: var(--marginb-2);
     margin-bottom: var(--marginb-4);
     text-align: center;
+}
+.section-title{
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--primary-color);
+  margin-top: var(--marginb-2);
+  margin-bottom: var(--marginb-4);
+  text-align: center;
 }
 .section-title::after{
     position: absolute;
@@ -102,13 +102,13 @@ image{
 }
 /*-----------------------------------Header--------------------------------*/
 .bd-grid{
-    max-width: 1024px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-column-gap: 2rem;
     width: calc(100% - 2rem);
     margin-left: var(--marginb-2);
     margin-right: var(--marginb-2);
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
   }
   .main-header{
     width: 100%;
@@ -117,7 +117,7 @@ image{
     left: 0;
     z-index: var(--z-fixed);
     background-color: #fff;
-    box-shadow: 0 1px 4px rgba(146,161,176,.15);
+    box-shadow: 0 1px rgba(146,161,176,.15);
   }
 /*-------------------------------------- Navgation-----------------------*/
 .nav{
@@ -126,18 +126,6 @@ image{
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-semi);
-  }
-  @media screen and (max-width: 768px){
-    .nav_menu{
-      position: fixed;
-      top: var(--header-height);
-      right: -100%;
-      width: 80%;
-      height: 100%;
-      padding: 2rem;
-      background-color: var(--secondary-color);
-      transition: .5s;
-    }
   }
   .nav_item{
     margin-bottom: var(--marginb-4);
@@ -155,17 +143,25 @@ image{
     width: 100%;
     height: 0.18rem;
     left: 0;
-    top: 2rem;
+    top: 25px;
     background-color: var(--primary-color);
   }
   .nav_logo{
     color: var(--secondary-color);
   }
-  .nav_toggle{
-    color: var(--secondary-color);
-    font-size: 1.5rem;
-    cursor: pointer;
+  @media screen and (max-width: 768px){
+    .nav_menu{
+      position: fixed;
+      top: var(--header-height);
+      right: -100%;
+      width: 80%;
+      height: 100%;
+      padding: 2rem;
+      background-color: var(--secondary-color);
+      transition: .5s;
+    }
   }
+
 /*-----------------------------Menu------------------------*/
   .show{
     right: 0;
@@ -179,7 +175,7 @@ image{
   }
   .home_title-color{
     color: var(--primary-color);
-  } */
+  } 
 
 /*----------------------------Summary--------------------------*/
   .summary_container{
@@ -294,18 +290,6 @@ image{
     font-weight: var(--font-semi);
     padding: 2rem 0;
   }
-  .footer_title{
-    font-size: 2rem;
-    margin-bottom: var(--marginb-4);
-  }
-  .footer_social{
-    margin-bottom: var(--marginb-4);
-  }
-  .footer_icon{
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0 var(--marginb-2)
-  }
   
   @media screen and (min-width: 768px){
     body{
@@ -344,9 +328,6 @@ image{
     .nav_item{
       margin-left: var(--marginb-6);
       margin-bottom: 0;
-    }
-    .nav_toggle{
-      display: none;
     }
     .nav_link{
       color: var(--secondary-color);
