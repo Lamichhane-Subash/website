@@ -251,17 +251,20 @@ image{
     border-radius: .5rem;
     z-index: var(--z-back);
   }
-  .skills_html{
+  .skills_java{
     width: 80%;
   }
+  .skills_c{
+    width: 80%;
+  }
+  .skills_html{
+    width: 40%;
+  }
   .skills_css{
-    width: 75%;
+    width: 40%;
   }
-  .skills_js{
-    width: 65%;
-  }
-  .skills_ux{
-    width: 60%;
+  .skills_py{
+    width: 40%;
   }
   .skills_img{
     border-radius: .5rem;
@@ -277,13 +280,12 @@ image{
     overflow: hidden;
   }
   .project_img img{
-    transition: 1s;
+    transition: 1s ease-in-out; 
     cursor: pointer;
   }
   .project_img img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
-
  /*-------------------------Footer-----------------------------*/
   .footer{
     background-color: var(--secondary-color);

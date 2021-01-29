@@ -2,21 +2,20 @@
 :root {
   --primary-color: rgba(13, 110, 139, 0.55);
   --secondary-color: rgba(24, 39, 51 , 0.85);
-  --trans-speed: 0.5s;
 }
-
 *{
+  font-family:'BigShoulders' ,sans-serif;
+  box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:  'BigShoulders' ,sans-serif;
-    box-sizing: border-box;
+   
   }
   a{
     text-decoration: none;
-    color: #fff;
+    color: white;
   }
   body{
-    background:#fff;
+    background:white;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -25,12 +24,11 @@
   .contact-info{
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
   }
-  
   .card{
     background:var(--primary-color);
     padding: 0 20px;
@@ -46,30 +44,30 @@
   }
   
   .card-icon{
-    font-size: 28px;
-    background: var(--secondary-color);
-    width: 60px;
-    height: 60px;
     text-align: center;
     line-height: 60px !important;
     border-radius: 50%;
     transition: 0.3s linear;
+    font-size: 28px;
+    background: var(--secondary-color);
+    width: 60px;
+    height: 60px;
   }
   
   .card:hover .card-icon{
     background: none;
-    transform: scale(1.6);
+    transform: scale(1.5);
   }
   
   .card p{
-    margin-top: 20px;
-    font-weight: 300;
-    letter-spacing: 2px;
     max-height: 0;
     opacity: 0;
     transition: 0.3s linear;
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
   }
-  
+
   .card:hover p{
     max-height: 40px;
     opacity: 1;
