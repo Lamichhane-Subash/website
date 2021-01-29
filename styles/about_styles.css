@@ -43,67 +43,58 @@
    --z-tooltip:10;
    --z-fixed:100;
 }
-*,::before, ::after{
-    box-sizing: border-box;
-}
 html{
     scroll-behavior: smooth;
 }
-body{
-    margin:var(--header-height) 0 0 0;
-    font-family: var(--body-font);
-    font-size: var(--regular-font-size);
-    color: var(--secondary-color);
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    margin:0%;
+    font-size:20px;
+    background: white;
+    color: black;
 }
-h1,h2,h3,p{
-    margin: 0;
+body:before{
+    content: "";
+    /* background: url('../images/m.jpeg') no-repeat center center/cover; */
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.clear{
+    clear: both;
 }
 a{
     text-decoration: none;
 }
-image{
-    max-width: 100%;
-    height: auto;
-    display: block;
+a:hover {
+    color:black;
+    transition: 0.75s ease-in;
+    transition: 0.75s ease-out;
 }
-.title{
+.section_title{
     position: relative;
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
     color: var(--primary-color);
     margin-top: var(--marginb-2);
     margin-bottom: var(--marginb-4);
     text-align: center;
-}
-.section-title{
-  position: relative;
-  font-size: var(--h2-font-size);
-  color: var(--primary-color);
-  margin-top: var(--marginb-2);
-  margin-bottom: var(--marginb-4);
-  text-align: center;
-}
-.section-title::after{
-    position: absolute;
-    content: "";
-    width: 64px;
-    height: 0.18rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: 2rem;
-    background-color: var(--primary-color);
-}
-.section{
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-}
-/*------------------------------Header Block -------------------------------------------------------*/
-.bd_grid{
+  }
+  .section_title::after{
+      position: absolute;
+      content: "";
+      width: 64px;
+      height: 0.18rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 3rem;
+      background-color: var(--primary-color);
+  }
+  .bd_grid{
     width: calc(100% - 2rem);
     margin-left: var(--marginb-2);
     margin-right: var(--marginb-2);
@@ -112,15 +103,8 @@ image{
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
   }
-  .main_header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-    background-color: #fff;
-    box-shadow: 0 1px rgba(146,161,176,.15);
-  }
+
+/*------------------------------Header Block -------------------------------------------------------*/
 .nav{
     height: var(--header-height);
     display: flex;
@@ -131,10 +115,7 @@ image{
   .nav_item{
     margin-bottom: var(--marginb-4);
   }
-  .nav_link{
-    position: relative;
 
-  }
   .nav_link:hover{
     position: relative;
   }
@@ -144,25 +125,45 @@ image{
     width: 100%;
     height: 0.18rem;
     left: 0;
-    top: 25px;
+    top: 20px;
     background-color: var(--primary-color);
   }
-  .nav_logo{
-    color: var(--secondary-color);
-  }
-  @media screen and (max-width: 768px){
-    .nav_menu{
-      position: fixed;
-      top: var(--header-height);
-      right: -100%;
-      width: 80%;
-      height: 100%;
-      padding: 2rem;
-      background-color: var(--secondary-color);
-      transition: .5s;
-    }
-  }
 
+.main_header{
+    padding :0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #fff;
+    box-shadow: 0 1px rgba(146,161,176,.15);
+  }
+#content{
+	background-color:white;
+    padding:18px;
+    box-shadow: 0px 2px lightgray;
+}
+#content ul{
+	padding-top: 0px;
+	padding-left: 5px;
+	list-style: none;
+}
+#content li{
+	display: inline;
+}
+nav a{
+  
+    text-align: right;  
+	color:black;
+    text-decoration:none;
+    font-size:larger;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px 50px;
+}
 /*----------------------- Button Block ----------------------------------------------------*/
 #myBtn{
     border: solid;
