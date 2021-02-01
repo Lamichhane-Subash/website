@@ -3,7 +3,7 @@
 /* VARABLES STYLES */
 :root {
     --primary-color: rgba(13, 110, 139, 0.55);
-    --overlay-color: rgba(24, 39, 51 , 0.85);
+    --secondary-color: rgba(24, 39, 51 , 0.85);
     --trans-speed: 0.5s;
   }
   /* Body */
@@ -146,7 +146,7 @@
   }
   
   .menu-wrap .menu > div {
-     background: var(--overlay-color); 
+    background: var(--secondary-color); 
     border-radius: 50%;
     width: 200vw;
     height: 200vw;
@@ -156,6 +156,7 @@
     justify-content: center;
     transform: scale(0);
     transition: all 0.5s ease;
+
   }
   
   .menu-wrap .menu > div > div {
@@ -181,9 +182,20 @@
   }
 
   .menu-wrap .menu > div > div > ul > li > a:hover {
-    color: red;
+    position: relative;
     transition: 0.75s ease-in-out;
   }
+  .menu-wrap .menu > div > div > ul > li > a:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 40px;
+    background-color: green;
+    transition: 0.75s ease-in-out;
+  }
+
 
   .menu-wrap .toggler:checked ~ .menu {
     visibility: visible;
