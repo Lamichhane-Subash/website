@@ -81,6 +81,7 @@ h1,h2,h3,p{
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
+
 }
 
 /*--------------------------------------Main_Header---------------------------------*/
