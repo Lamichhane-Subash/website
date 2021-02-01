@@ -4,6 +4,9 @@
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,105 +20,165 @@
 <body>
 
 
- <header class="main_header">
-    <nav class="nav bd_grid">
-        <div>
-            <a href="#" >Subash Lamichhane</a>
-        </div>
+    <header class="main_header bd_grid">
+        <nav class="nav ">
+            <div class='name_property'>
+                <a href="#">Subash Lamichhane</a>
+            </div>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="main_page.html" class="nav_link"><i class='bx bxs-home'></i></a></li>
+                    <li class="nav_item"><a href="#Summary" class="nav_link active">Summary</a></li>
+                    <li class="nav_item"><a href="#Education" class="nav_link">Education</a></li>
+                    <li class="nav_item"><a href="#Skills" class="nav_link">Skills</a></li>
+                    <li class="nav_item"><a href="#Project" class="nav_link">Project(s)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <div class="nav_menu" id="nav-menu">
-            <ul class="nav_list">
-                <li class="nav_item"><a href="main_page.html" class="nav_link"><i class='bx bxs-home' ></i></a></li>
-                <li class="nav_item"><a href="#Summary" class="nav_link active">Summary</a></li>
-                <li class="nav_item"><a href="#Education" class="nav_link">Education</a></li>
-                <li class="nav_item"><a href="#Skills" class="nav_link">Skills</a></li>
-                <li class="nav_item"><a href="#Project" class="nav_link">Project(s)</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-      
-    <section id='info'>
-        <div id="intro bd_grid">
-            <h2 class='section_title'>Professional Summary</h2>
-            <p> Enthusiastic to contribute to team success through hard work, attention to detail and
-                excellent organizational skills. Solid academic background in design methods,
-                implementation, maintenance and evolution of software systems. Motivated to learn,
-                grow and excel in the software Industry.
-            </p>
-        </div>
-    </section>
+    <main class="l-main">
 
-    <div id='exp bd_grid'>
-        <section id='exp-main'>
-            <h2 class="section_title">Experience</h2>
-            <p class='date'>September 2016-2019
-            </p>
-            <p class="position">Server, Nirvana the flavors of India</p>
+        <section class="home bd_grid" id="home">
+            <div class="home_data">
+                <h1 class="home_title">Hi,<br>I am <span class="home_title-color">Subash</span><br> </h1>
+            </div>
         </section>
-        <div class='clear'></div>
-        <ul class='def'>
-            <li>Created orders, documented special requests and followed up with kitchen
-                personnel to foster top-quality service and minimize complaints.</li>
-            <li>Kept up to date knowledge of menu and promotions, recommending specific
-                items according to preferences and food allergies.</li>
-            <li>Collaborated with the kitchen team to support order preparation, managed
-                efficient deliveries and minimized customer service issues by verifying
-                meals.</li>
-        </ul>
-    </div>
 
-    <section id="edu-block">
-        <div id='edu bd_grid'>
-            <h2 class='section_title'>Education</h2>
-            <p class='itl'><b>York University, Toronto, Ontario</b></p>
-            <p>April 2021: Bachelor of Science: Computer Science and Programming </p>
-            <p class='itl'><b>Mississauga Secondary High School, Mississauga, Ontario</b></p>
-            <p class='last'> June 2018: High school Diploma</p>
-        </div>
-    </section>
+        <section class="summary section " id="Summary">
+            <h2 class="section_title">Summary</h2>
 
-    <section id="key-block">
-        <div id='key bd_grid'>
-            <h2 class='section_title'>Key Skills</h2>
-            <ul id='left'>
-                <li>Proficient understanding of
-                    Java and C</li>
-                <li>Well diverse with HTML and CSS</li>
-                <li>Accuracy and attention to detail</li>
-                <li>Excellent organizational and
-                    time management skills</li>
-            </ul>
-            <ul id='right'>
-                <li>Advanced problem-solving
-                    skills</li>
-                    <li>knowledgeable with Python</li>
-                <li>Solid academic background in
-                    design methods,
-                    implementation, maintenance
-                    and evolution of software </li>
-            <div class='clear'></div>
-        </div>
-    </section>
-    <div class='clear'></div>
-    <section id="acc-block">
-        <div id='acc bd_grid'>
-            <h2 class='section_title'>Project(s)</h2>
-            <p class='indent'><b>GPA Calculator</b></p>
-            <ul>
-                <li>Created an Android App, which computes a cumulative grade point average
-                    “GPA” up to 8 entered courses. GPA calculator is available as a tool to assist
-                    you with calculating your grade point average.</li>
-            </ul>
-            <p class='indent'> <a class='link'
-                    href="https://play.google.com/store/apps/details?id=subashqwgmail.com.gpacalculatator&hl=en&gl=US"
-                    target="_blank"><u>GPA Calculator</u></a>
-            </p>
-            
-    </section>
-    
-    <div class='clear'></div>
-    <div style="margin-top: 150px;"></div> 
+            <div class="summary_container bd-grid">
+                <div class="summary_img">
+                    <img src="../images/icon.png" alt="">
+                </div>
+                
+                <div>
+                    <p class="summary_text">Enthusiastic to contribute to team success through hard work, attention to detail and excellent organizational skills. Solid academic background in design methods, implementation, maintenance and evolution of software systems. Motivated to learn,
+                        grow and excel in the software Industry.</p>           
+                </div>                                   
+            </div>
+        </section>
+
+        <section class="education section " id="Education">
+            <h2 class="section_title">Education</h2>
+
+            <div class="education_container bd-grid">
+                <div class="education_img">
+                    <img src="../images/index.png" alt="">
+                </div>
+                
+                <div>
+                    <h2 class="education_subtitle"></h2>
+                    <p class='itl'><b>Mississauga Secondary High School, Mississauga, Ontario</b></p>
+                    <p class='last'> June 2018: High school Diploma</p>  
+                    <p class='itl'><b>York University, Toronto, Ontario</b></p>
+                    <p>April 2021: Bachelor of Science: Computer Science and Programming </p>
+                             
+                </div>                                   
+            </div>
+        </section>
+
+       
+        <section class="skills section" id="Skills">
+            <h2 class="section_title">Skills</h2>
+
+            <div class="skills_container bd_grid">          
+                <div>
+                    <h2 class="skills_subtitle">Profesional Skills</h2>
+                    <p class="skills_text"></p>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='skills_icon'></i>
+                            <span class=" skills_name">Java</span>
+                        </div>
+                        <div class="skills_bar skills_java">
+
+                        </div>
+                        <div>
+                            <span class="skills_percentage">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='skills_icon'></i>
+                            <span class="skills_name">C</span>
+                        </div>
+                        <div class="skills_bar skills_c">
+                            
+                        </div>
+                        <div>
+                            <span class="skills_percentage">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-html5 skills_icon' ></i>
+                            <span class="skills_name">HTML</span>
+                        </div>
+                        <div class="skills_bar skills_html">
+                            
+                        </div>
+                        <div>
+                            <span class="skills_percentage">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-css3 skills_icon' ></i>
+                            <span class="skills_name">CSS</span>
+                        </div>
+                        <div class="skills_bar skills_css">
+                            
+                        </div>
+                        <div>
+                            <span class="skills_percentage">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-python skills_icon'></i>
+                            <span class="skills_name">Python</span>
+                        </div>
+                        <div class="skills_bar skills_py">
+                            
+                        </div>
+                        <div>
+                            <span class="skills_percentage">Beginner</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>              
+                    <img src="assets/img/work3.jpg" alt="" class="skills_img">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="project section" id="Project">
+            <h2 class="section_title">Project(s)</h2>
+
+            <h3 class="title">GPA Calculator</h3>
+            <div class="project_container bd_grid">
+                <div class="project_img">
+                    <img src="../images/project.png" width="350px" height="350px" alt="">
+                </div>
+                <div class="project_img">
+                    <img src="../images/simple_Image.png" width='200px' alt="">
+                </div>
+                <div class="project_img">
+                    <img src="../images/fast_image.png" width='200px' alt="">
+                </div>
+                <div class="project_img">
+                    <img src="../images/accurate_image.png" width='200px' alt="">
+                </div>
+            </div>
+        </section>
+ 
+    <footer class="footer">
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 
 </html>
