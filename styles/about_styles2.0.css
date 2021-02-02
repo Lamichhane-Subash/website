@@ -72,7 +72,7 @@ image{
 .title{
     position: relative;
     font-size: var(--h3-font-size);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-top: var(--marginb-2);
     margin-bottom: var(--marginb-4);
     text-align: center;
