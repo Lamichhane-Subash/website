@@ -21,31 +21,30 @@
     align-items: center;
     justify-content: center;
   }
-  .contact-info{
+.application_info{
     display: flex;
+    justify-content: center;
+    align-content: center;
     width: 100%;
     max-width: 1000px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-  }
-  .card{
-    background:var(--primary-color);
-    padding: 0 20px;
+    padding: 0 20;
+}
+.card{
+    background-color: var(--primary-color);
+    padding: 20px 20px;
     margin: 0 10px;
-    width: calc(33% - 20px);
-    height: 200px;
     display: flex;
-    flex-direction: column;
+    height: 200px;
+    width: calc(50% - 150px);
     justify-content: center;
     align-items: center;
-    color: #fff;
+    flex-direction: column;
     cursor: pointer;
+    color: white;
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
     border-radius: .5rem;
-  }
-  
-  .card-icon{
+}
+.card_icon{
     text-align: center;
     line-height: 60px !important;
     border-radius: 50%;
@@ -55,23 +54,19 @@
     width: 60px;
     height: 60px;
   }
-  
-  .card:hover .card-icon{
-    background: none;
-    transform: scale(1.5);
+  .card:hover .card_icon{
+      background: none;
+      transform: scale(1.5);
   }
-  
-  .card p{
-    max-height: 0;
+.card p{
     opacity: 0;
     transition: 0.3s linear;
     margin-top: 20px;
     font-weight: 300;
     letter-spacing: 2px;
-  }
 
-  .card:hover p{
+}
+.card:hover p{
     max-height: 40px;
     opacity: 1;
-  }
-  
+}
