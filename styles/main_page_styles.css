@@ -146,7 +146,7 @@
   }
   
   .menu-wrap .menu > div {
-    background: var(--secondary-color); 
+    background: black; 
     border-radius: 50%;
     width: 200vw;
     height: 200vw;
@@ -156,7 +156,6 @@
     justify-content: center;
     transform: scale(0);
     transition: all 0.5s ease;
-
   }
   
   .menu-wrap .menu > div > div {
